@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đăng Ký</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .gender {
+      margin-top: 5px;
+    }
+
+    .gender input {
+      margin-right: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Đăng Ký Thông Tin Cá Nhân</h2>
+  <form>
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label>Giới tính:</label>
+    <div class="gender">
+      <input type="radio" id="male" name="gender" value="Nam" required>
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="gender" value="Nữ">
+      <label for="female">Nữ</label>
+    </div>
+
+    <button type="submit">Gửi</button>
+  </form>
+</body>
+</html>
